@@ -2,8 +2,19 @@ package com.app.dto;
 
 public class DrinkItem {
 
-	 String name, type;
+	String name, type;
+	 
+	public DrinkItem() {
+		
+	}
 
+	public DrinkItem(String name, String type) {
+		super();
+		this.name = name;
+		this.type = type;
+	}
+
+	
 	public String getName() {
 		return name;
 	}
