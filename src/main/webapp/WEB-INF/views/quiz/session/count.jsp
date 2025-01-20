@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>접속정보</h1>
-	<p>사용자 ID: ${loginId}</p>
+	<p>${loginId}님이 접속하셨습니다.</p>
     <p>접속 횟수: ${count}</p>
     
     <form action="/quiz/session/logout" method="post">

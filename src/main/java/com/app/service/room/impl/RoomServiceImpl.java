@@ -9,12 +9,25 @@ import com.app.dao.room.RoomDAO;
 import com.app.dto.room.Room;
 import com.app.service.room.RoomService;
 
+import lombok.Data;
+
+@Data
+
 
 @Service
 public class RoomServiceImpl implements RoomService {
 
 	@Autowired
 	RoomDAO roomDAO;
+	
+	// configuration 연습
+//	public RoomServiceImpl() {
+//		
+//	}
+//	
+//	public RoomServiceImpl(RoomDAO roomDAO) {
+//		this.roomDAO = roomDAO;
+//	}
 	
 	@Override
 	public List<Room> findRoomList() {
