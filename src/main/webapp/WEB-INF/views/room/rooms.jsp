@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>rooms Page</h1>
+	<h1>rooms 페이지</h1>
 </body>
 </html>

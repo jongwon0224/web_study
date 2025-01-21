@@ -7,16 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>ViewData1 Page</h1>
+	<h1>viewData1 페이지</h1>
 	
-	<!--controller 입력값을 웹에 출력하는법-- 1.-->
-	<%=request.getAttribute("state") %>
-	<%=request.getAttribute("time") %>
-		
-	<!-- -- 2. <태크>%{변수명}</태크> -->	
+	<%=request.getAttribute("state")%>
+	<%=request.getAttribute("time")%>
+	
 	<p>${state}</p>
-	<p>${time}</p>
-		
-	
+	<div>
+		<p></p>
+		<span>${time}</span>
+	</div>
 </body>
 </html>

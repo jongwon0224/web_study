@@ -14,10 +14,10 @@ public class Quiz10RoomServiceImpl implements Quiz10RoomService {
 	
 	@Override
 	public int saveRoom(Quiz10Room quiz10Room) {
-		// TODO Auto-generated method stub
+		
 		int result = quiz10RoomDAO.saveRoom(quiz10Room);
 		
 		return result;
 	}
-
+	
 }

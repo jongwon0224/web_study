@@ -7,15 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>BMI 계산하기</h1>
+	<h1> ask-bmi </h1>
 	
-	<div>
-		<form action="/quiz04/result-bmi" method="post">
-			<input type="text" name="name" placeholder="이름 입력해주세요 :">
-			<input type="text" name="height" placeholder="키를 입력해주세요 :">
-			<input type="text" name="weight" placeholder="몸무게를 입력해주세요 : ">
-			<button id="btn_bmi">계산하기</button>
-		</form>
-	</div>
+	<form action="/quiz04/result-bmi4" method="post">
+		이름 : <input type="text" name="name"> <br>
+		키 : <input type="text" name="height"> <br>
+		몸무게 : <input type="text" name="weight"> <br>
+		<button type='submit'>확인하기</button>
+	</form>
+	
 </body>
 </html>

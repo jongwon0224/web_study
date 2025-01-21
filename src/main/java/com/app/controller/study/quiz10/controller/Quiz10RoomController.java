@@ -14,17 +14,16 @@ public class Quiz10RoomController {
 	@Autowired
 	Quiz10RoomService quiz10RoomService;
 	
-	
 	@GetMapping("/quiz10registerRoom")
 	public String quiz10registerRoom() {
 		return "quiz/quiz10/quiz10registerRoom";
 	}
 	
-	
 	@PostMapping("/quiz10registerRoom")
 	public String quiz10registerRoomAction(Quiz10Room quiz10Room) {
 		
 		int result = quiz10RoomService.saveRoom(quiz10Room);
+		
 		
 		return "quiz/quiz10/quiz10registerRoom";
 	}

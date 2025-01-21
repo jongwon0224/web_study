@@ -7,17 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>MODEL 객체로 받아오기</h1>
-	<h1>이름 : ${name}</h1>
-	<h1>키 : ${hei}</h1>
-	<h1>몸무게 : ${wei}</h1>
-	<h1>BMI 지수 : ${bmi}</h1>
-	<br/>
+	<h1> result-bmi </h1>
 	
-	<h1>DTO객체로 받아오기</h1>
-	<h1>이름 : ${item.name}</h1>
-	<h1>키 : ${item.height}</h1>
-	<h1>몸무게 : ${item.weight}</h1>
-	<h1>BMI 지수 : ${bmi}</h1>
+	<p>이름 : ${name}</p>
+	<p>키 : ${height}</p>
+	<p>몸무게 : ${weight}</p>
+	<p>bmi 지수 : ${bmi}</p>
+	
+	<br>
+	<br>
+	
+	<p>이름 : ${personBmi.name}</p>
+	<p>키 : ${personBmi.height}</p>
+	<p>몸무게 : ${personBmi.weight}</p>
+	<p>bmi 지수 : ${personBmi.bmi}</p>
+	
+	
 </body>
 </html>

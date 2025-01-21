@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>퀴즈페이지 A상품정보 표시</h1>
+	pathA
 </body>
 </html>

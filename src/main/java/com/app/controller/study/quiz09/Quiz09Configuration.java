@@ -27,10 +27,11 @@ public class Quiz09Configuration {
 		return dessertBean;
 	}
 	
-	@Bean // 생성자에 컨피그
+	@Bean
 	PlateBean plateBean(DessertBean dessertBean) {
 		PlateBean plateBean = new PlateBean();
 		plateBean.setDessertBean(dessertBean);
 		return plateBean;
 	}
+	
 }

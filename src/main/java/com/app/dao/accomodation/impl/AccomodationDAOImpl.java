@@ -1,5 +1,7 @@
 package com.app.dao.accomodation.impl;
 
-public class AccomodationDAOImpl {
+import com.app.dao.accomodation.AccomodationDAO;
+
+public class AccomodationDAOImpl implements AccomodationDAO {
 
 }

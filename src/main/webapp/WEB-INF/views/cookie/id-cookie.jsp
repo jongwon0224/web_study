@@ -8,14 +8,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="" method="post">
 	
-		아이디 : <input type="text" name="id" value="${remember}"> <br>
-		PW : <input type="password" name="pw"> <br>
+	
+	<form action="" method="post">
+		아이디:<input type="text" name="id" value="${remember}"> <br>
+		PW: <input type="password" name="pw"> <br>
 		로그인 아이디 기억 <input type="checkbox" name="remember" value="true"
 			<c:if test="${remember != null}">checked</c:if> 
 			> <br>
-		<button type="submit">제출</button>
+		<button type="submit">로그인</button>
 	</form>
+	
 </body>
 </html>

@@ -1,35 +1,27 @@
 package com.app.dto.study;
 
 public class DrinkItem {
-
-	String name, type;
-	 
-	public DrinkItem() {
-		
-	}
-
-	public DrinkItem(String name, String type) {
+	String item;
+	String type;
+	
+	public DrinkItem() {}
+	
+	public DrinkItem(String item, String type) {
 		super();
-		this.name = name;
+		this.item = item;
 		this.type = type;
 	}
-
 	
-	public String getName() {
-		return name;
+	public String getItem() {
+		return item;
 	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setItem(String item) {
+		this.item = item;
 	}
-
 	public String getType() {
 		return type;
 	}
-
 	public void setType(String type) {
 		this.type = type;
 	}
-	 
-	 
 }

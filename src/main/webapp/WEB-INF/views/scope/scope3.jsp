@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Scope3 Page</h1>
+	<h1>scope3</h1>
 	<p>${requestMsg}</p>
 	<p>${requestScope.requestMsg}</p>
 	

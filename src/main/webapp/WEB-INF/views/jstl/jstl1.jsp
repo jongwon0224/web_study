@@ -9,59 +9,78 @@
 </head>
 <body>
 	<h1>jstl1</h1>
+	
 	${msg}
-	<hr>
 	
 	<c:out value="${msg}"/>
-	<br/>
+	
+	${d1.item} ${d1.type}
+	
+	${drinkList[0].item}
+	${drinkList.get(1).item}
+	
+	
+	
+	<div class="itemBox">
+		<h3>${drinkList[0].item}</h3>
+		<p>${drinkList[0].type}</p>
+	</div>
+	<div class="itemBox">
+		<h3>${drinkList[1].item}</h3>
+		<p>${drinkList[1].type}</p>
+	</div>
+	<div class="itemBox">
+		<h3>${drinkList[2].item}</h3>
+		<p>${drinkList[2].type}</p>
+	</div>
+	<div class="itemBox">
+		<h3>${drinkList[3].item}</h3>
+		<p>${drinkList[3].type}</p>
+	</div>
+	
+	<hr>
 	<hr>
 	
-	<!-- for(int i=1; i<=5; i++ 를 의미함-->
-	<c:forEach var="i" begin="1" end="${listSize}" step="1">
+<!-- 	for(int i=1; i<=5; i++) -->
+	<c:forEach var="i" begin="1" end="5" step="1">
 		<p>반복됨 ${i}</p>
-	</c:forEach>	
-	<hr>
+	</c:forEach>
 	
-	<!-- for(DrinkItem drinkItem : drinkList) 를 의미함-->
+<!-- 	for(DrinkItem drinkItem : drinkList) -->
 	<c:forEach var="drinkItem" items="${drinkList}">
-		<div>
-			<h3>${drinkItem.name} : ${drinkItem.type}</h3>
+		<div class="itemBox">
+			<h3>${drinkItem.item}</h3>
+			<p>${drinkItem.type}</p>
 		</div>
 	</c:forEach>
-	<hr>
 	
-	<!-- c:choose활용 => 조건여러개 사용 가능 & when + otherwise는 else임 -->
 	<c:choose>
-		<c:when test="${userType == 'user'}">
-			<p>일반사용자입니다. c:choose사용</p>
+		<c:when test="${ userType == 'user' }">
+			<p>일반사용자입니다</p>
 		</c:when>
-		<c:when test="${userType == 'admin'}">
-			<p>관리자입니다. c:choose사용</p>
+		<c:when test="${ userType == 'admin' }">
+			<p>관리자입니다</p>
 		</c:when>
 		<c:otherwise>
-			<p>정체불명입니다. c:choose사용</p>
+			<p>정체불명입니다</p>
 		</c:otherwise>
 	</c:choose>
-	<hr>
 	
-	<!-- c:if활용 => 조건1개만 사용할수있음 -->
-	<c:if test="${userType == 'user' }">
-		<p>환영합니다. 유저입니다. c:if사용</p>
-	</c:if>
-	<!-- c:if활용 => 조건1개만 사용할수있음 -->
-	<c:if test="${userType == 'admin' }">
-		<p>환영합니다. 관리자입니다. c:if사용</p>
+	<c:if test="${ userType == 'user' }">
+		<p>환영합니다</p>
 	</c:if>
 	
-	<!-- 로그인 일 경우 불린으로 처리-->
-	<c:if test="${isLogin == true}">
-		<p>로그인되었습니다</p>
+	<c:if test="${ userType == 'admin' }">
+		<button>상품관리하기</button>
+	</c:if>
+	
+	<c:if test="${isLogin == true }">
 		<button>로그아웃</button>
 	</c:if>
-	<!-- 로그인 일 경우 불린으로 처리-->
-	<c:if test="${isLogin == false}">
-		<p>로그아웃되었습니다</p>
+	
+	<c:if test="${isLogin == false }">
 		<button>로그인</button>
 	</c:if>
+	
 </body>
 </html>

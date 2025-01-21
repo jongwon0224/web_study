@@ -10,9 +10,9 @@ public class Quiz10CustomerDAOImpl implements Quiz10CustomerDAO {
 	@Override
 	public int saveCustomer(Quiz10Customer quiz10Customer) {
 		// TODO Auto-generated method stub
+		
+		// DB 저장 
 		return 0;
 	}
-	
-	
 
 }
